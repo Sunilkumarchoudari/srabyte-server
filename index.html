@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SraByte - Innovative Digital Solutions</title>
+    <meta name="description" content="SraByte offers cutting-edge AI, Machine Learning, and web development solutions to elevate your digital presence. Contact us for innovative software and student project support in Hyderabad, India.">
+    <meta name="keywords" content="AI development, Machine Learning, web development, mobile app development, student projects, software solutions, Hyderabad, SraByte">
+    <meta name="author" content="Sunil Kumar Choudari">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#007BFF">
+    <link rel="canonical" href="https://srabyte.com/">
+    <link rel="sitemap" href="/sitemap.xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="SraByte - Innovative Digital Solutions">
+    <meta property="og:description" content="Transform your ideas into reality with SraByte's AI, ML, and web development services. Based in Hyderabad, we specialize in innovative software and student project support.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://srabyte.com/">
+    <meta property="og:image" content="https://srabyte.com/assets/images/logo.png">
+    <meta property="og:site_name" content="SraByte">
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="SraByte - Innovative Digital Solutions">
+    <meta name="twitter:description" content="Transform your ideas into reality with SraByte's AI, ML, and web development services. Based in Hyderabad, we specialize in innovative software and student project support.">
+    <meta name="twitter:image" content="https://srabyte.com/assets/images/logo.png">
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "name": "SraByte",
+                "url": "https://srabyte.com/",
+                "logo": "https://srabyte.com/assets/images/logo.png",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+91-8386868385",
+                    "contactType": "Customer Service",
+                    "email": "contact@srabyte.com",
+                    "areaServed": "IN",
+                    "availableLanguage": "English"
+                },
+                "sameAs": [
+                    "https://linkedin.com/in/sunilkumarchoudari",
+                    "https://github.com/sunilkumarchoudari",
+                    "https://instagram.com/srabyte"
+                ]
+            },
+            {
+                "@type": "WebSite",
+                "url": "https://srabyte.com/",
+                "name": "SraByte",
+                "description": "Innovative AI, ML, and web development solutions",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "SraByte"
+                }
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://srabyte.com/#home"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "About",
+                        "item": "https://srabyte.com/#about"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Services",
+                        "item": "https://srabyte.com/#services"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "name": "Projects",
+                        "item": "https://srabyte.com/#projects"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 5,
+                        "name": "Contact",
+                        "item": "https://srabyte.com/#contact"
+                    }
+                ]
+            }
+        ]
+    }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation"></div>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader" aria-label="Loading"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav-container" role="navigation" aria-label="Main navigation">
+            <div class="logo" onclick="showPage('home')" role="button" aria-label="SraByte Logo">
+                <img src="./assets/images/logo.png" alt="SraByte Logo" style="width: 320px; vertical-align: middle; margin-right: 10px;">
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" onclick="showPage('home')" class="nav-link active" aria-current="page">
+                    <i class="fas fa-home" aria-hidden="true"></i> Home
+                </a></li>
+                <li><a href="#about" onclick="showPage('about')" class="nav-link">
+                    <i class="fas fa-user" aria-hidden="true"></i> About
+                </a></li>
+                <li><a href="#services" onclick="showPage('services')" class="nav-link">
+                    <i class="fas fa-cogs" aria-hidden="true"></i> Services
+                </a></li>
+                <li><a href="#projects" onclick="showPage('projects')" class="nav-link">
+                    <i class="fas fa-project-diagram" aria-hidden="true"></i> Projects
+                </a></li>
+                <li><a href="#contact" onclick="showPage('contact')" class="nav-link">
+                    <i class="fas fa-envelope" aria-hidden="true"></i> Contact
+                </a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileToggle" aria-label="Toggle mobile menu">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <section class="hero">
+                <div class="floating-elements">
+                    <div class="floating-element" aria-hidden="true"></div>
+                    <div class="floating-element" aria-hidden="true"></div>
+                    <div class="floating-element" aria-hidden="true"></div>
+                </div>
+                <div class="hero-content">
+                    <h1>Elevate Your Digital Presence</h1>
+                    <p class="hero-subtitle">with Innovative Solutions</p>
+                    <p class="hero-description">
+                        Let's turn your imagination into reality with cutting-edge AI, ML, and development solutions that drive business growth and innovation.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#services" onclick="showPage('services')" class="cta-button" aria-label="Explore SraByte Services">
+                            <i class="fas fa-rocket" aria-hidden="true"></i> Explore Services
+                        </a>
+                        <a href="#projects" onclick="showPage('projects')" class="cta-button secondary" aria-label="View SraByte Projects">
+                            <i class="fas fa-project-diagram" aria-hidden="true"></i> View Projects
+                        </a>
+                        <a href="#contact" onclick="showPage('contact')" class="cta-button secondary" aria-label="Contact SraByte">
+                            <i class="fas fa-phone" aria-hidden="true"></i> Get In Touch
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- About Page -->
+        <div id="about" class="page">
+            <section class="section">
+                <h2 class="section-title fade-in">About SraByte</h2>
+                <p class="section-subtitle fade-in">Innovative Technology Solutions for the Digital Age</p>
+                <div class="about-grid">
+                    <article class="glass-card founder-card slide-in-left">
+                        <div class="founder-image">
+                            <i class="fas fa-user-tie" aria-hidden="true"></i>
+                        </div>
+                        <div class="founder-info">
+                            <h3>Sunil Kumar Choudari</h3>
+                            <p class="title">Full Stack & AI/ML Developer</p>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <span>contact@srabyte.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-globe" aria-hidden="true"></i>
+                                <span>sunilkumarchoudari.github.io</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <span>+91 8386868385</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <span>Hyderabad</span>
+                            </div>
+                            <div class="social-links">
+                                <a href="mailto:contact@srabyte.com" class="social-link" aria-label="Email SraByte">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                </a>
+                                <a href="tel:+918386868385" class="social-link" aria-label="Call SraByte">
+                                    <i class="fas fa-phone" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/sunilkumarchoudari" class="social-link" aria-label="SraByte LinkedIn Profile">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/sunilkumarchoudari" class="social-link" aria-label="SraByte GitHub Profile">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="glass-card slide-in-right">
+                        <h3 style="color: var(--primary-blue); font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 1.5rem;">
+                            <i class="fas fa-lightbulb" aria-hidden="true"></i> Our Vision
+                        </h3>
+                        <p style="margin-bottom: 2rem; line-height: 1.8; color: rgba(255, 255, 255, 0.9); font-size: clamp(0.9rem, 1.5vw, 1rem);">
+                            At SraByte, we specialize in transforming ideas into powerful digital solutions. With expertise in AI/ML, web development, and mobile applications, we deliver cutting-edge technology that drives business growth and innovation.
+                        </p>
+                        <h4 style="color: var(--primary-purple); font-size: clamp(1.2rem, 2vw, 1.5rem); margin-bottom: 1rem;">
+                            <i class="fas fa-graduation-cap" aria-hidden="true"></i> Student Support
+                        </h4>
+                        <p style="margin-bottom: 2rem; line-height: 1.8; color: rgba(255, 255, 255, 0.8); font-size: clamp(0.8rem, 1.5vw, 0.9rem);">
+                            We support students for their final projects and scholar's thesis work, helping them achieve academic excellence through innovative technology solutions.
+                        </p>
+                        <h4 style="color: var(--secondary-blue); font-size: clamp(1.2rem, 2vw, 1.5rem); margin-bottom: 1rem;">
+                            <i class="fas fa-star" aria-hidden="true"></i> Why Choose Us?
+                        </h4>
+                        <div style="display: grid; gap: 1rem;">
+                            <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.05); border-radius: 15px;">
+                                <i class="fas fa-check-circle" style="color: var(--primary-blue); font-size: 1.2rem;" aria-hidden="true"></i>
+                                <span style="font-size: clamp(0.8rem, 1.5vw, 0.9rem);">Client-centric approach with tailored solutions</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.05); border-radius: 15px;">
+                                <i class="fas fa-check-circle" style="color: var(--primary-purple); font-size: 1.2rem;" aria-hidden="true"></i>
+                                <span style="font-size: clamp(0.8rem, 1.5vw, 0.9rem);">Innovation at core with cutting-edge technologies</span>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 1rem; padding: 1rem; background: rgba(255, 255, 255, 0.05); border-radius: 15px;">
+                                <i class="fas fa-check-circle" style="color: var(--secondary-blue); font-size: 1.2rem;" aria-hidden="true"></i>
+                                <span style="font-size: clamp(0.8rem, 1.5vw, 0.9rem);">Transparent communication and collaboration</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!-- Services Page -->
+        <div id="services" class="page">
+            <section class="section">
+                <h2 class="section-title fade-in">Our Services</h2>
+                <p class="section-subtitle fade-in">Comprehensive Digital Solutions for Modern Businesses</p>
+                <div class="services-grid" id="servicesGrid">
+                    <!-- Services will be loaded here -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Projects Page -->
+        <div id="projects" class="page">
+            <section class="section">
+                <h2 class="section-title fade-in">Our Projects</h2>
+                <p class="section-subtitle fade-in">Showcasing Our Innovative Solutions</p>
+                <div class="filter-search-container">
+                    <div class="search-bar">
+                        <input type="text" id="projectSearch" placeholder="Search projects by title or description..." aria-label="Search projects">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="filter-options">
+                        <h4 style="color: var(--primary-blue); margin-bottom: 1rem;">Filter by Technology:</h4>
+                        <div class="filter-checkboxes">
+                            <label><input type="checkbox" value="Python" class="filter-checkbox" aria-label="Filter by Python"> Python</label>
+                            <label><input type="checkbox" value="Artificial Intelligence" class="filter-checkbox" aria-label="Filter by Artificial Intelligence"> Artificial Intelligence</label>
+                            <label><input type="checkbox" value="Deep Learning" class="filter-checkbox" aria-label="Filter by Deep Learning"> Deep Learning</label>
+                            <label><input type="checkbox" value="Machine Learning" class="filter-checkbox" aria-label="Filter by Machine Learning"> Machine Learning</label>
+                            <label><input type="checkbox" value="Web Application" class="filter-checkbox" aria-label="Filter by Web Application"> Web Application</label>
+                            <label><input type="checkbox" value="Android" class="filter-checkbox" aria-label="Filter by Android"> Android</label>
+                            <label><input type="checkbox" value="React" class="filter-checkbox" aria-label="Filter by React"> React</label>
+                            <label><input type="checkbox" value="JavaScript" class="filter-checkbox" aria-label="Filter by JavaScript"> JavaScript</label>
+                        </div>
+                        <button id="clearFilters" class="clear-btn" aria-label="Clear all filters">Clear Filters</button>
+                    </div>
+                </div>
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Projects will be loaded here -->
+                </div>
+            </section>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <section class="section">
+                <h2 class="section-title fade-in">Request a Project Quote</h2>
+                <p class="section-subtitle fade-in">Ready to start your next project? Let's discuss your ideas!</p>
+                <div class="contact-grid">
+                    <article class="glass-card slide-in-left">
+                        <h3 style="color: var(--primary-blue); font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 2rem;">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i> Contact Information
+                        </h3>
+                        <div style="display: grid; gap: 1.5rem;">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Email</strong><br>
+                                    <a href="mailto:contact@srabyte.com" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">contact@srabyte.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-globe" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Website</strong><br>
+                                    <a href="https://sunilkumarchoudari.github.io" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">sunilkumarchoudari.github.io</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Phone</strong><br>
+                                    <a href="tel:+918386868385" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;">+91 8386868385</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <div>
+                                    <strong>Location</strong><br>
+                                    <span style="color: rgba(255, 255, 255, 0.8);">Hyderabad, India</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-top: 3rem;">
+                            <h4 style="color: var(--primary-purple); margin-bottom: 1rem;">Connect With Us</h4>
+                            <div class="social-links">
+                                <a href="mailto:contact@srabyte.com" target="_blank" class="social-link" aria-label="Email SraByte">
+                                    <i class="fas fa-envelope" aria-hidden="true"></i>
+                                </a>
+                                <a href="tel:+918386868385" target="_blank" class="social-link" aria-label="Call SraByte">
+                                    <i class="fas fa-phone" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://linkedin.com/in/sunilkumarchoudari" target="_blank" class="social-link" aria-label="SraByte LinkedIn Profile">
+                                    <i class="fab fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/sunilkumarchoudari" target="_blank" class="social-link" aria-label="SraByte GitHub Profile">
+                                    <i class="fab fa-github" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://instagram.com/srabyte" target="_blank" class="social-link" aria-label="SraByte Instagram Profile">
+                                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="contact-form slide-in-right">
+                        <h3 style="color: var(--primary-blue); font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 2rem;">
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i> Request Project Quote
+                        </h3>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="fullName">Full Name</label>
+                                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="collegeOrCompany">College or Company Name</label>
+                                <input type="text" id="collegeOrCompany" name="collegeOrCompany" placeholder="Enter your college or company name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="branchOrPosition">Branch or Position</label>
+                                <input type="text" id="branchOrPosition" name="branchOrPosition" placeholder="Enter your branch or position" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" id="address" name="address" placeholder="Enter your address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactNumber">Contact Number</label>
+                                <input type="tel" id="contactNumber" name="contactNumber" placeholder="Enter your contact number" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select id="gender" name="gender" required>
+                                    <option value="" style="background-color: black;">Select gender</option>
+                                    <option value="Male" style="background-color: black;">Male</option>
+                                    <option value="Female" style="background-color: black;">Female</option>
+                                    <option value="Others" style="background-color: black;">Others</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="projectDomain">Project Domain</label>
+                                <input type="text" id="projectDomain" name="projectDomain" placeholder="Enter project domain" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="projectRequirements">Project Requirements</label>
+                                <textarea id="projectRequirements" name="projectRequirements" rows="5" placeholder="Describe your project requirements..." required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="estimatedCompletionDate">Estimated Completion Date</label>
+                                <input type="date" id="estimatedCompletionDate" name="estimatedCompletionDate" required>
+                            </div>
+                            <button type="submit" class="submit-btn" aria-label="Request Project Quote">
+                                <i class="fas fa-send" aria-hidden="true"></i> Request Quote
+                            </button>
+                        </form>
+                        <div id="otpForm" style="display: none;">
+                            <h3 style="color: var(--primary-blue); font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 2rem;">
+                                <i class="fas fa-lock" aria-hidden="true"></i> Verify OTP
+                            </h3>
+                            <div class="form-group">
+                                <label for="otp">Enter OTP (Check spam/junk folder if not received)</label>
+                                <input type="text" id="otp" name="otp" placeholder="Enter the OTP sent to your email" required aria-label="Enter OTP">
+                            </div>
+                            <button id="verifyOtpBtn" class="submit-btn" aria-label="Verify OTP">
+                                <i class="fas fa-check" aria-hidden="true"></i> Verify OTP
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!-- Project Modal -->
+        <div class="modal" id="projectModal">
+            <div class="modal-content">
+                <button class="close-modal" onclick="closeModal()" aria-label="Close Project Modal">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+                <div class="modal-icon-container" id="modalIconContainer"></div>
+                <h3 class="modal-title" id="modalTitle"></h3>
+                <p class="modal-description" id="modalDescription"></p>
+                <div class="modal-technologies" id="modalTechnologies"></div>
+                <div class="modal-domains" id="modalDomains"></div>
+            </div>
+        </div>
+
+        <!-- Project Quote Modal -->
+        <div class="modal" id="projectQuoteModal">
+            <div class="modal-content">
+                <button class="close-modal" onclick="closeQuoteModal()" aria-label="Close Quote Modal">
+                    <i class="fas fa-times" aria-hidden="true"></i>
+                </button>
+                <h3 class="modal-title" id="quoteModalTitle"></h3>
+                <form id="projectQuoteForm">
+                    <div class="form-group">
+                        <label for="quoteFullName">Full Name</label>
+                        <input type="text" id="quoteFullName" name="fullName" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteCollegeOrCompany">College or Company Name</label>
+                        <input type="text" id="quoteCollegeOrCompany" name="collegeOrCompany" placeholder="Enter your college or company name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteBranchOrPosition">Branch or Position</label>
+                        <input type="text" id="quoteBranchOrPosition" name="branchOrPosition" placeholder="Enter your branch or position" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteAddress">Address</label>
+                        <input type="text" id="quoteAddress" name="address" placeholder="Enter your address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteEmail">Email Address</label>
+                        <input type="email" id="quoteEmail" name="email" placeholder="Enter your email address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteContactNumber">Contact Number</label>
+                        <input type="tel" id="quoteContactNumber" name="contactNumber" placeholder="Enter your contact number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteGender">Gender</label>
+                        <select id="quoteGender" name="gender" required>
+                            <option value="" style="background-color: black;">Select gender</option>
+                            <option value="Male" style="background-color: black;">Male</option>
+                            <option value="Female" style="background-color: black;">Female</option>
+                            <option value="Others" style="background-color: black;">Others</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteProjectRequirements">Project Requirements</label>
+                        <textarea id="quoteProjectRequirements" name="projectRequirements" rows="5" placeholder="Describe your project requirements..." required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="quoteEstimatedCompletionDate">Estimated Completion Date</label>
+                        <input type="date" id="quoteEstimatedCompletionDate" name="estimatedCompletionDate" required>
+                    </div>
+                    <button type="submit" class="submit-btn" aria-label="Request Project Quote">
+                        <i class="fas fa-send" aria-hidden="true"></i> Request Quote
+                    </button>
+                </form>
+                <div id="quoteOtpForm" style="display: none;">
+                    <h3 style="color: var(--primary-blue); font-size: clamp(1.5rem, 3vw, 2rem); margin-bottom: 2rem;">
+                        <i class="fas fa-lock" aria-hidden="true"></i> Verify OTP
+                    </h3>
+                    <div class="form-group">
+                        <label for="quoteOtp">Enter OTP (Check spam/junk folder if not received)</label>
+                        <input type="text" id="quoteOtp" name="otp" placeholder="Enter the OTP sent to your email" required aria-label="Enter OTP">
+                    </div>
+                    <button id="quoteVerifyOtpBtn" class="submit-btn" aria-label="Verify OTP">
+                        <i class="fas fa-check" aria-hidden="true"></i> Verify OTP
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Page-specific SEO metadata
+        const pageMeta = {
+            'home': {
+                title: 'SraByte - Innovative Digital Solutions',
+                description: 'SraByte offers cutting-edge AI, Machine Learning, and web development solutions to elevate your digital presence in Hyderabad, India.'
+            },
+            'about': {
+                title: 'About SraByte - AI and Web Development Experts',
+                description: 'Learn about SraByte’s mission to deliver innovative AI, ML, and web development solutions, led by Sunil Kumar Choudari in Hyderabad.'
+            },
+            'services': {
+                title: 'SraByte Services - AI, ML, and Web Development',
+                description: 'Explore SraByte’s services, including AI, Machine Learning, mobile app development, web apps, and student project support in Hyderabad.'
+            },
+            'projects': {
+                title: 'SraByte Projects - Innovative Software Solutions',
+                description: 'Discover SraByte’s portfolio of AI, Machine Learning, and web development projects, showcasing innovative solutions in Hyderabad.'
+            },
+            'contact': {
+                title: 'Contact SraByte - Request a Project Quote',
+                description: 'Get in touch with SraByte in Hyderabad for AI, ML, and web development project quotes. Submit your requirements today.'
+            }
+        };
+
+        // Services data
+        const services = [
+            {
+                title: "AI & Machine Learning",
+                description: "Harness the power of Artificial Intelligence and Machine Learning to gain insights, automate processes, and enhance decision-making capabilities for your business.",
+                icon: "fas fa-brain",
+                number: "1",
+                features: ["Predictive Analytics", "Natural Language Processing", "Computer Vision", "Automated Decision Making"]
+            },
+            {
+                title: "Mobile App Development",
+                description: "Transform your ideas into interactive and user-friendly mobile applications. Specializing in crafting seamless and feature-rich mobile experiences across platforms.",
+                icon: "fas fa-mobile-alt",
+                number: "2",
+                features: ["iOS & Android Apps", "Cross-Platform Solutions", "UI/UX Design", "App Store Optimization"]
+            },
+            {
+                title: "Web App Development",
+                description: "Create robust and scalable web applications tailored to your unique requirements using modern technologies and best practices.",
+                icon: "fas fa-globe",
+                number: "3",
+                features: ["Responsive Design", "Full-Stack Development", "Cloud Integration", "Performance Optimization"]
+            },
+            {
+                title: "Offshore Software Development",
+                description: "Unlock global expertise with our offshore software development solutions, providing cost-effective and high-quality development services.",
+                icon: "fas fa-code",
+                number: "4",
+                features: ["Dedicated Teams", "Agile Methodology", "24/7 Support", "Quality Assurance"]
+            },
+            {
+                title: "Student Projects",
+                description: "Explore your ideas here. We support students for their final projects and scholar's thesis work, helping achieve academic excellence through technology.",
+                icon: "fas fa-graduation-cap",
+                number: "5",
+                features: ["Project Guidance", "Technical Mentoring", "Research Support", "Academic Excellence"]
+            }
+        ];
+
+        // Current page and tracking variables
+        let currentPage = 'home';
+        let currentProjectIndex = null;
+        let currentOtpId = null;
+        let projects = [];
+        let filteredProjects = [];
+
+        // Update meta tags for SEO
+        function updateMetaTags(pageName) {
+            const meta = pageMeta[pageName] || pageMeta['home'];
+            document.title = meta.title;
+            let metaDesc = document.querySelector('meta[name="description"]');
+            if (!metaDesc) {
+                metaDesc = document.createElement('meta');
+                metaDesc.name = 'description';
+                document.head.appendChild(metaDesc);
+            }
+            metaDesc.content = meta.description;
+
+            // Update Open Graph and Twitter Card tags
+            document.querySelector('meta[property="og:title"]').content = meta.title;
+            document.querySelector('meta[property="og:description"]').content = meta.description;
+            document.querySelector('meta[name="twitter:title"]').content = meta.title;
+            document.querySelector('meta[name="twitter:description"]').content = meta.description;
+        }
+
+        // Mobile menu functionality
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navMenu = document.getElementById('navMenu');
+        const header = document.getElementById('header');
+
+        mobileToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = mobileToggle.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+            mobileToggle.setAttribute('aria-expanded', navMenu.classList.contains('active'));
+        });
+
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = mobileToggle.querySelector('i');
+                icon.classList.add('fa-bars');
+                icon.classList.remove('fa-times');
+                mobileToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Page navigation
+        function showPage(pageName) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            document.getElementById(pageName).classList.add('active');
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.classList.remove('active');
+                link.removeAttribute('aria-current');
+            });
+            const currentNavLink = document.querySelector(`[onclick="showPage('${pageName}')"]`);
+            if (currentNavLink) {
+                currentNavLink.classList.add('active');
+                currentNavLink.setAttribute('aria-current', 'page');
+            }
+            currentPage = pageName;
+            updateMetaTags(pageName);
+            setTimeout(() => {
+                animatePageElements();
+            }, 100);
+            closeModal();
+            closeQuoteModal();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.history.pushState({}, '', `#${pageName}`);
+        }
+
+        // Animate page elements
+        function animatePageElements() {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+                observer.observe(el);
+            });
+        }
+
+        // Create service card
+        function createServiceCard(service, index) {
+            return `
+                <article class="glass-card service-card fade-in" style="transition-delay: ${index * 0.1}s" role="region" aria-labelledby="service-${index}">
+                    <div class="service-number">${service.number}</div>
+                    <i class="${service.icon} service-icon" aria-hidden="true"></i>
+                    <h3 id="service-${index}">${service.title}</h3>
+                    <p style="margin-bottom: 2rem;">${service.description}</p>
+                    <div style="border-top: 1px solid var(--glass-border); padding-top: 1.5rem;">
+                        <h4 style="color: var(--primary-blue); margin-bottom: 1rem; font-size: clamp(0.9rem, 1.5vw, 1.1rem);">Key Features:</h4>
+                        <div style="display: grid; gap: 0.5rem;">
+                            ${service.features.map(feature => `
+                                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                                    <i class="fas fa-check" style="color: var(--primary-blue); font-size: 0.8rem;" aria-hidden="true"></i>
+                                    <span style="font-size: clamp(0.8rem, 1.5vw, 0.9rem); color: rgba(255, 255, 255, 0.8);">${feature}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                </article>
+            `;
+        }
+
+        // Create project card
+        function createProjectCard(project, index) {
+            return `
+                <article class="glass-card project-card fade-in" style="transition-delay: ${index * 0.1}s" role="region" aria-labelledby="project-${index}">
+                    <div class="project-icon-container">
+                        <i class="${project.icon || 'fas fa-project-diagram'}" aria-hidden="true"></i>
+                    </div>
+                    <div class="project-content">
+                        <div>
+                            <h3 class="project-title" id="project-${index}">${project.title}</h3>
+                            <p class="project-description">${project.shortDescription}</p>
+                            <div class="project-technologies">
+                                ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+                            </div>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" class="view-project-btn" data-index="${index}" onclick="showProjectModal(${index})" aria-label="View details for ${project.title}">Details</a>
+                            <a href="#" class="request-quote-btn" onclick="showProjectQuoteModal(${index})" aria-label="Request quote for ${project.title}">Price</a>
+                        </div>
+                    </div>
+                </article>
+            `;
+        }
+
+        // Show project modal
+        function showProjectModal(index) {
+            const project = filteredProjects[index] || projects[index];
+            if (!project) {
+                console.error(`No project found at index ${index}`);
+                return;
+            }
+            const modal = document.getElementById('projectModal');
+            const modalIconContainer = document.getElementById('modalIconContainer');
+            const modalTitle = document.getElementById('modalTitle');
+            const modalDescription = document.getElementById('modalDescription');
+            const modalTechnologies = document.getElementById('modalTechnologies');
+            const modalDomains = document.getElementById('modalDomains');
+
+            modalIconContainer.innerHTML = `<i class="${project.icon || 'fas fa-project-diagram'}" aria-hidden="true"></i>`;
+            modalTitle.textContent = project.title;
+            modalDescription.textContent = project.fullDescription;
+            modalTechnologies.innerHTML = project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('');
+            modalDomains.innerHTML = project.domains.map(domain => `<span class="tech-tag">${domain}</span>`).join('');
+
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+
+            // Update meta tags for project modal
+            document.title = `${project.title} - SraByte Project`;
+            let metaDesc = document.querySelector('meta[name="description"]');
+            metaDesc.content = project.shortDescription;
+            document.querySelector('meta[property="og:title"]').content = `${project.title} - SraByte Project`;
+            document.querySelector('meta[property="og:description"]').content = project.shortDescription;
+            document.querySelector('meta[name="twitter:title"]').content = `${project.title} - SraByte Project`;
+            document.querySelector('meta[name="twitter:description"]').content = project.shortDescription;
+
+            // Add JSON-LD for project
+            const projectJsonLd = document.createElement('script');
+            projectJsonLd.type = 'application/ld+json';
+            projectJsonLd.textContent = JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "CreativeWork",
+                "name": project.title,
+                "description": project.shortDescription,
+                "url": `https://srabyte.com/#projects/${index}`,
+                "creator": {
+                    "@type": "Organization",
+                    "name": "SraByte"
+                }
+            });
+            document.head.appendChild(projectJsonLd);
+        }
+
+        // Show project quote modal
+        function showProjectQuoteModal(index) {
+            currentProjectIndex = index;
+            const project = filteredProjects[index] || projects[index];
+            if (!project) {
+                console.error(`No project found at index ${index}`);
+                return;
+            }
+            const modal = document.getElementById('projectQuoteModal');
+            const modalTitle = document.getElementById('quoteModalTitle');
+            modalTitle.textContent = `Request Quote: ${project.title}`;
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close modal
+        function closeModal() {
+            const modal = document.getElementById('projectModal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            updateMetaTags(currentPage);
+            // Remove project-specific JSON-LD
+            const projectJsonLd = document.querySelector('script[type="application/ld+json"]:last-child');
+            if (projectJsonLd && projectJsonLd.textContent.includes('CreativeWork')) {
+                projectJsonLd.remove();
+            }
+        }
+
+        // Close quote modal
+        function closeQuoteModal() {
+            const modal = document.getElementById('projectQuoteModal');
+            modal.style.display = 'none';
+            document.getElementById('projectQuoteForm').reset();
+            document.getElementById('quoteOtpForm').style.display = 'none';
+            document.getElementById('projectQuoteForm').style.display = 'block';
+            currentOtpId = null;
+            document.body.style.overflow = 'auto';
+            updateMetaTags(currentPage);
+        }
+
+        // Load services
+        function loadServices() {
+            const servicesGrid = document.getElementById('servicesGrid');
+            servicesGrid.innerHTML = services.map((service, index) => createServiceCard(service, index)).join('');
+        }
+
+        // Load projects from backend
+        async function loadProjects() {
+            const projectsGrid = document.getElementById('projectsGrid');
+            try {
+                const response = await fetch('http://localhost:8080/projects');
+                const data = await response.json();
+                if (data.error) {
+                    console.error('Error loading projects:', data.error);
+                    projectsGrid.innerHTML = '<p>Error loading projects. Please try again later.</p>';
+                    return;
+                }
+                projects = data.projects;
+                filteredProjects = [...projects];
+                renderProjects();
+                console.log('Projects loaded:', projects);
+            } catch (error) {
+                console.error('Error fetching projects:', error);
+                projectsGrid.innerHTML = '<p>Error loading projects. Please try again later.</p>';
+            }
+        }
+
+        // Render filtered projects
+        function renderProjects() {
+            const projectsGrid = document.getElementById('projectsGrid');
+            if (filteredProjects.length === 0) {
+                projectsGrid.innerHTML = '<p>No projects match the selected filters.</p>';
+            } else {
+                projectsGrid.innerHTML = filteredProjects.map((project, index) => createProjectCard(project, index)).join('');
+            }
+            animatePageElements();
+        }
+
+        // Filter and search projects
+        function filterProjects() {
+            const searchQuery = document.getElementById('projectSearch').value.trim().toLowerCase();
+            const selectedFilters = Array.from(document.querySelectorAll('.filter-checkbox:checked')).map(cb => cb.value);
+            filteredProjects = projects.filter(project => {
+                const matchesSearch = project.title.toLowerCase().includes(searchQuery) ||
+                                     project.shortDescription.toLowerCase().includes(searchQuery) ||
+                                     project.fullDescription.toLowerCase().includes(searchQuery);
+                const matchesFilters = selectedFilters.length === 0 ||
+                                      selectedFilters.every(filter => 
+                                          project.technologies.includes(filter) || 
+                                          (filter === 'Machine Learning' && project.technologies.includes('ML')) ||
+                                          (filter === 'Deep Learning' && project.technologies.includes('DL'))
+                                      );
+                return matchesSearch && matchesFilters;
+            });
+            renderProjects();
+        }
+
+        // Scroll effects
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData);
+            data.abstract = data.abstract && data.abstract.name ? data.abstract.name : '';
+            const submitBtn = document.querySelector('#contactForm .submit-btn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Sending OTP...';
+            submitBtn.disabled = true;
+            try {
+                console.log('Sending form data:', data);
+                const response = await $.ajax({
+                    url: 'http://localhost:8080/send-otp',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(data),
+                    xhrFields: { withCredentials: true }
+                });
+                if (response.message) {
+                    currentOtpId = response.otp_id;
+                    document.getElementById('contactForm').style.display = 'none';
+                    document.getElementById('otpForm').style.display = 'block';
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }
+            } catch (error) {
+                console.error('Error sending OTP:', error);
+                console.log('Response:', error.responseText || 'No response text');
+                console.log('Status:', error.status);
+                alert(error.responseJSON?.error || 'Failed to send OTP. Please try again.');
+                submitBtn.innerHTML = '<i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Error';
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            }
+        });
+
+        // Verify OTP for contact form
+        document.getElementById('verifyOtpBtn').addEventListener('click', async () => {
+            const otpInput = document.getElementById('otp').value.trim();
+            const submitBtn = document.getElementById('verifyOtpBtn');
+            const originalText = submitBtn.innerHTML;
+            if (!otpInput) {
+                alert('Please enter the OTP');
+                return;
+            }
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Verifying...';
+            submitBtn.disabled = true;
+            try {
+                console.log('Sending OTP:', otpInput, 'OTP ID:', currentOtpId);
+                const response = await $.ajax({
+                    url: 'http://localhost:8080/verify-otp',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ otp: otpInput, otp_id: currentOtpId }),
+                    xhrFields: { withCredentials: true }
+                });
+                if (response.message) {
+                    submitBtn.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i> Request Sent!';
+                    submitBtn.style.background = 'linear-gradient(135deg, #28a745, #20c997)';
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        submitBtn.style.background = 'linear-gradient(135deg, var(--primary-blue), var(--primary-purple))';
+                        document.getElementById('contactForm').reset();
+                        document.getElementById('otpForm').style.display = 'none';
+                        document.getElementById('contactForm').style.display = 'block';
+                        currentOtpId = null;
+                    }, 2000);
+                }
+            } catch (error) {
+                console.error('Error verifying OTP:', error);
+                console.log('Response:', error.responseText || 'No response text');
+                console.log('Status:', error.status);
+                alert(error.responseJSON?.error || 'Invalid OTP or error occurred. Please try again.');
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Project quote form submission
+        document.getElementById('projectQuoteForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const formData = new FormData(e.target);
+            const data = Object.fromEntries(formData);
+            data.projectTitle = (filteredProjects[currentProjectIndex] || projects[currentProjectIndex])?.title || 'General Project Request';
+            const submitBtn = document.querySelector('#projectQuoteForm .submit-btn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Sending OTP...';
+            submitBtn.disabled = true;
+            try {
+                console.log('Sending form data:', data);
+                const response = await $.ajax({
+                    url: 'http://localhost:8080/send-otp',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(data),
+                    xhrFields: { withCredentials: true }
+                });
+                if (response.message) {
+                    currentOtpId = response.otp_id;
+                    document.getElementById('projectQuoteForm').style.display = 'none';
+                    document.getElementById('quoteOtpForm').style.display = 'block';
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }
+            } catch (error) {
+                console.error('Error sending OTP:', error);
+                console.log('Response:', error.responseText || 'No response text');
+                console.log('Status:', error.status);
+                alert(error.responseJSON?.error || 'Failed to send OTP. Please try again.');
+                submitBtn.innerHTML = '<i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Error';
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            }
+        });
+
+        // Verify OTP for project quote form
+        document.getElementById('quoteVerifyOtpBtn').addEventListener('click', async () => {
+            const otpInput = document.getElementById('quoteOtp').value.trim();
+            const submitBtn = document.getElementById('quoteVerifyOtpBtn');
+            const originalText = submitBtn.innerHTML;
+            if (!otpInput) {
+                alert('Please enter the OTP');
+                return;
+            }
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Verifying...';
+            submitBtn.disabled = true;
+            try {
+                console.log('Sending OTP:', otpInput, 'OTP ID:', currentOtpId);
+                const response = await $.ajax({
+                    url: 'http://localhost:8080/verify-otp',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ otp: otpInput, otp_id: currentOtpId }),
+                    xhrFields: { withCredentials: true }
+                });
+                if (response.message) {
+                    submitBtn.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i> Request Sent!';
+                    submitBtn.style.background = 'linear-gradient(135deg, #28a745, #20c997)';
+                    setTimeout(() => {
+                        submitBtn.innerHTML = originalText;
+                        submitBtn.disabled = false;
+                        submitBtn.style.background = 'linear-gradient(135deg, var(--primary-blue), var(--primary-purple))';
+                        document.getElementById('projectQuoteForm').reset();
+                        document.getElementById('quoteOtpForm').style.display = 'none';
+                        document.getElementById('projectQuoteForm').style.display = 'block';
+                        closeQuoteModal();
+                        currentOtpId = null;
+                    }, 2000);
+                }
+            } catch (error) {
+                console.error('Error verifying OTP:', error);
+                console.log('Response:', error.responseText || 'No response text');
+                console.log('Status:', error.status);
+                alert(error.responseJSON?.error || 'Invalid OTP or error occurred. Please try again.');
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Initialize page
+        window.addEventListener('load', () => {
+            document.getElementById('pageLoader').style.opacity = '0';
+            setTimeout(() => {
+                document.getElementById('pageLoader').style.display = 'none';
+            }, 500);
+            loadServices();
+            loadProjects();
+            document.getElementById('projectSearch').addEventListener('input', filterProjects);
+            document.querySelectorAll('.filter-checkbox').forEach(checkbox => {
+                checkbox.addEventListener('change', filterProjects);
+            });
+            document.getElementById('clearFilters').addEventListener('click', () => {
+                document.querySelectorAll('.filter-checkbox').forEach(cb => cb.checked = false);
+                document.getElementById('projectSearch').value = '';
+                filteredProjects = [...projects];
+                renderProjects();
+            });
+            animatePageElements();
+            document.addEventListener('click', (e) => {
+                if (e.target.closest('.cta-button, .glass-card, .social-link, .view-project-btn, .request-quote-btn, .clear-btn')) {
+                    createRipple(e);
+                }
+            });
+            // Handle initial page load from hash
+            const hash = window.location.hash.replace('#', '');
+            if (hash && pageMeta[hash]) {
+                showPage(hash);
+            } else {
+                updateMetaTags('home');
+            }
+        });
+
+        // Ripple effect
+        function createRipple(event) {
+            const button = event.target.closest('.cta-button, .glass-card, .social-link, .view-project-btn, .request-quote-btn, .clear-btn');
+            if (!button) return;
+            const circle = document.createElement('span');
+            const diameter = Math.max(button.clientWidth, button.clientHeight);
+            const radius = diameter / 2;
+            const rect = button.getBoundingClientRect();
+            circle.style.width = circle.style.height = `${diameter}px`;
+            circle.style.left = `${event.clientX - rect.left - radius}px`;
+            circle.style.top = `${event.clientY - rect.top - radius}px`;
+            circle.classList.add('ripple');
+            const ripple = button.getElementsByClassName('ripple')[0];
+            if (ripple) {
+                ripple.remove();
+            }
+            button.style.position = 'relative';
+            button.style.overflow = 'hidden';
+            button.appendChild(circle);
+            if (!document.getElementById('ripple-styles')) {
+                const style = document.createElement('style');
+                style.id = 'ripple-styles';
+                style.textContent = `
+                    .ripple {
+                        position: absolute;
+                        border-radius: 50%;
+                        background: rgba(255, 255, 255, 0.3);
+                        transform: scale(0);
+                        animation: ripple-effect 0.6s linear;
+                        pointer-events: none;
+                    }
+                    @keyframes ripple-effect {
+                        to {
+                            transform: scale(4);
+                            opacity: 0;
+                        }
+                    }
+                `;
+                document.head.appendChild(style);
+            }
+            setTimeout(() => {
+                circle.remove();
+            }, 600);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.altKey) {
+                switch(e.key) {
+                    case '1':
+                        e.preventDefault();
+                        showPage('home');
+                        break;
+                    case '2':
+                        e.preventDefault();
+                        showPage('about');
+                        break;
+                    case '3':
+                        e.preventDefault();
+                        showPage('services');
+                        break;
+                    case '4':
+                        e.preventDefault();
+                        showPage('projects');
+                        break;
+                    case '5':
+                        e.preventDefault();
+                        showPage('contact');
+                        break;
+                }
+            }
+        });
+
+        // Close modals on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+                closeQuoteModal();
+            }
+        });
+
+        // Close modals when clicking outside
+        document.getElementById('projectModal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('projectModal')) {
+                closeModal();
+            }
+        });
+
+        document.getElementById('projectQuoteModal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('projectQuoteModal')) {
+                closeQuoteModal();
+            }
+        });
+    </script>
+</body>
+</html>

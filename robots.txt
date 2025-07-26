@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://srabyte.com/sitemap.xml
