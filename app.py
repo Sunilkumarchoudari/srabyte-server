@@ -15,6 +15,8 @@ import uuid
 import yaml
 import traceback
 
+import requests
+
 # Load environment variables
 load_dotenv()
 
@@ -110,10 +112,16 @@ def serve_favicon():
 
 @app.route('/projects', methods=['GET'])
 def get_projects():
-    """Read and parse projects from projects.md."""
+    """Fetch and parse projects from a remote projects.md file."""
+    url = 'https://raw.githubusercontent.com/Sunilkumarchoudari/srabyte-server/master/projects.md'
+    
     try:
-        with open('projects.md', 'r') as file:
-            content = file.read()
+        response = requests.get(url)
+        if response.status_code != 200:
+            print(f"Failed to fetch file. Status code: {response.status_code}")
+            return jsonify({'error': 'Failed to fetch projects file'}), 502
+        
+        content = response.text
         
         # Split content by YAML front matter delimiter (---)
         project_sections = content.split('---')[1:]  # Skip initial empty section
@@ -133,20 +141,18 @@ def get_projects():
                         'icon': project_data.get('icon', 'fas fa-project-diagram')
                     })
                 except yaml.YAMLError as e:
-                    print(f"Error parsing project in projects.md: {e}")
+                    print(f"Error parsing project section: {e}")
                     continue
         
         if not projects:
-            print("Warning: No projects parsed from projects.md")
+            print("Warning: No projects parsed from remote projects.md")
             return jsonify({'error': 'No projects found'}), 404
         
-        print(f"Loaded {len(projects)} projects from projects.md")
+        print(f"Loaded {len(projects)} projects from remote projects.md")
         return jsonify({'projects': projects})
-    except FileNotFoundError:
-        print("Error: projects.md file not found")
-        return jsonify({'error': 'Projects file not found'}), 404
+    
     except Exception as e:
-        print(f"Error reading projects.md: {e}")
+        print(f"Error reading remote projects.md: {e}")
         traceback.print_exc()
         return jsonify({'error': 'Server error'}), 500
 
@@ -336,6 +342,14 @@ def verify_otp():
         print(f"Error in verify_otp: {str(e)}")
         traceback.print_exc()
         return jsonify({'error': 'Server error'}), 500
+    
+    
+@app.route('/subscribe', methods=['POST'])
+def subscribe():
+    data = request.get_json()
+    email = data.get('email')
+    # Save email to database or subscription service
+    return jsonify({"message": "Subscribed successfully"}), 200
 
 if __name__ == '__main__':
     port = int(os.environ.get("PORT", 8080))

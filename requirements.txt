@@ -12,3 +12,5 @@ python-dotenv
 requests
 dnspython
 secure-smtplib
+requests
+pyyaml
