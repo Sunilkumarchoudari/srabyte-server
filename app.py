@@ -22,10 +22,11 @@ app = Flask(__name__)
 app.secret_key = os.urandom(24).hex()
 
 # CORS configuration
-CORS(app, supports_credentials=True, origins=['http://127.0.0.1:*', 'http://localhost:*'])
+# CORS(app, supports_credentials=True, origins=['http://127.0.0.1:*', 'http://localhost:*'])
+CORS(app)
 
 # MongoDB configuration
-MONGO_URI = os.getenv('MONGO_URI', 'mongodb://localhost:27017')
+MONGO_URI = os.getenv('MONGO_URI', 'mongodb+srv://sahithibooks:sahithi2025@sahithibooks.x4teffe.mongodb.net/sra-otp?retryWrites=true&w=majority&appName=sahithibooks')
 try:
     client = MongoClient(MONGO_URI)
     db = client['srabyt']  # Updated to match your database name

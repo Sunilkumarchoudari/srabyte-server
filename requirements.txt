@@ -1,0 +1,14 @@
+flask-pymongo
+flask-cors
+pymongo
+gunicorn
+werkzeug
+flask-bcrypt
+python-dateutil
+Flask
+bcrypt
+pyjwt
+python-dotenv
+requests
+dnspython
+secure-smtplib
