@@ -24,7 +24,7 @@ app = Flask(__name__)
 app.secret_key = os.urandom(24).hex()
 
 # CORS configuration
-CORS(app, supports_credentials=True, origins=['http://127.0.0.1:*', 'http://localhost:*', 'https://srabyte.com:*'])
+CORS(app, supports_credentials=True, origins=['http://127.0.0.1:*', 'http://localhost:*', 'https://srabyte.com:*', 'https://sunilkumarchoudari.github.io/srabyte-server:*', 'https://sunilkumarchoudari.github.io:*', 'https://github.com:*'])
 
 # MongoDB configuration
 MONGO_URI = os.getenv('MONGO_URI', 'mongodb+srv://sahithibooks:sahithi2025@sahithibooks.x4teffe.mongodb.net/sra-otp?retryWrites=true&w=majority&appName=sahithibooks')
