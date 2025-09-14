@@ -9,7 +9,9 @@
         content="SraByte offers cutting-edge AI, Machine Learning, and web development solutions to elevate your digital presence. Contact us for innovative software and student project support in Hyderabad, India.">
     <meta name="keywords"
         content="AI development, Machine Learning, web development, mobile app development, student projects, software solutions, Hyderabad, SraByte">
-    <meta name="author" content="Sunil Kumar Choudari">
+    <meta name="author" content="Sunil Kumar Choudari, sunilkumarchoudari, Sunil choudari, Choudari sunilkumarchoudari, choudari Sunil Kumar, Sunil Kumar Choudhary, SunilKumar Choudhary">
+    <meta name="keywords" content="Sunil Kumar Choudari, sunilkumarchoudari, Sunil Choudari, Choudari Sunil Kumar, Sunil Kumar Choudhary, SunilKumar Choudhary, Sunil Choudhary Kumar, Kumar Sunil Choudari, Choudari Kumar Sunil, S.K. Choudari, SK Choudari, Sunil K Choudari, Sunil Choudari tech, Sunil Choudari Hyderabad, Choudari Sunil developer, sunilkumarchoudari projects, Sunil Kumar C, Kumar Choudari Sunil, SunilChoudari AI, Sunil Choudari portfolio, Choudari Sunil digital, Choudari Sunil app, SunilKumar C, Choudari S.K.">
+    <meta name="keywords" content="AI development, Machine Learning, web development, mobile app development, student projects, software solutions, Hyderabad, SraByte, Python development, JavaScript development, React development, Node.js development, Flutter development, database design, API development, cloud solutions, AWS services, MongoDB, Firebase, custom software development, digital transformation, tech consulting, computer science projects, final year projects, dissertation help, coding assistance, startup solutions, business automation, data analytics, neural networks, deep learning, chatbot development, e-commerce development, UI/UX design, full-stack development, DevOps, software testing, agile development, microservices, RESTful APIs, responsive web design, cross-platform development, Android development, iOS development, technical support, SEO optimization, digital marketing, CRM systems, blockchain development, IoT development, cybersecurity, performance optimization, scalable applications, technical training, programming tutorials, software architecture, enterprise solutions, API integration, payment gateway integration, WordPress development, Laravel development, Django development, real-time applications, progressive web apps, technical documentation, code review, project management, quality assurance, user testing, conversion optimization, business intelligence, machine learning models, recommendation systems, content management systems, social media integration, automation consulting, legacy system modernization, cloud migration, technical consulting, innovation strategy, academic research assistance, thesis support, career guidance, portfolio development, GitHub optimization, professional networking">
     <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#007BFF">
     <link rel="canonical" href="https://srabyte.com/">
@@ -106,6 +108,16 @@
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-20JFD5YV4M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-20JFD5YV4M');
+</script>
 </head>
 
 <body>
@@ -585,7 +597,7 @@
                     SraByte delivers innovative AI, ML, and web development solutions to transform your digital
                     presence. Based in Hyderabad, we empower businesses and students with cutting-edge technology.
                 </p>
-                <div class="footer-social-links">
+                <div class="footer-social-links" style="justify-content: center; flex-direction: row;">
                     <a href="mailto:contact@srabyte.com" target="_blank" class="footer-social-link"
                         aria-label="Send email to SraByte">
                         <i class="fas fa-envelope" aria-hidden="true"></i>
@@ -831,7 +843,7 @@
         // Create service card
         function createServiceCard(service, index) {
             return `
-                <article class="glass-card service-card fade-in" style="transition-delay: ${index * 0.1}s" role="region" aria-labelledby="service-${index}">
+                <article class="glass-card service-card fade-in" role="region" aria-labelledby="service-${index}">
                     <div class="service-number">${service.number}</div>
                     <i class="${service.icon} service-icon" aria-hidden="true"></i>
                     <h3 id="service-${index}">${service.title}</h3>
